@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     minLength: [3, "Name must contain at least 3 character!"],
-    maxLength: [32, "Name cannot exceed 32 character!"], //length with message
+    maxLength: [32, "Name cannot exceed 32 character!"], //first argument representing length and second message
   },
   email: {
     type: String,
@@ -52,4 +52,3 @@ const userSchema = new mongoose.Schema({
 export const User = mongoose.model("User",userSchema);
 
 
-//36:06
