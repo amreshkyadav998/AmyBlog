@@ -18,7 +18,7 @@ const blogSchema = new mongoose.Schema({
   intro: {
     type: String,
     required: true,
-    minLength: [250, "Intro should of at least 250 characters!"],
+    minLength: [250, "You need to give intro at least 250 characters!"],
   },
   paraOneImage: {
     public_id: {
